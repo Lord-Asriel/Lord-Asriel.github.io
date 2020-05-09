@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./webpage.css">
+</head>
+
+<body>
+    <nav>
+        <h2 class="o-flex_half">Kyle Hogue</h2>
+        <div class="container o-space_evenly">
+            <h3><a href="./index.html">Home</a></h3>
+            <h3><a href="./inspirations.html">Inspirations</a></h3>
+            <h3><a href="./contact.html">Contact</a></h3>
+            <h3><a href="https://github.com/Lord-Asriel">GitHub</a></h3>
+        </div>
+    </nav>
+    <main>
+        <section class="about_me">
+            <h1>Contact Me</h1>
+            <h4 class="touch">Want to get in touch?</h4>
+            <form>
+                <label for="fnameFirst">First Name:</label>
+                <input type="text" name="fnameFirst" required>
+                <label for="fnameLast">Last Name:</label>
+                <input required type="text" name="fnameLast">
+                <label for="phone">Phone Number:</label>
+                <input required type="text" name="phone">
+                <label for="email">Email:</label>
+                <input required type="email" name="email">
+                <label for="province">Select Your Province:</label>
+                <select required id="province">
+                    <option value="Alberta">Alberta</option>
+                    <option value="BritishColumbia">British Columbia</option>
+                    <option value="Manitoba">Manitoba</option>
+                    <option value="NewBrunswick">New Brunswick</option>
+                    <option value="NewfoundlandAndLabrador">Newfoundland And Labrador</option>
+                    <option value="NorthwestTerritories">Northwest Territories</option>
+                    <option value="NovaScotia">Nova Scotia</option>
+                    <option value="Nunavut">Nunavut</option>
+                    <option value="Ottawa">Ottawa</option>
+                    <option value="PrinceEdwardIsland">Prince Edward Island</option>
+                    <option value="Quebec">Quebec</option>
+                    <option value="Saskatchewan">Saskatchewan</option>  
+                    <option value="Yukon">Yukon</option>
+                </select>
+                <div class="multi_select">
+                    <p class="contact">Prefered Method Of Contact:</p>
+                    <div>
+                    <input required type="radio" id="contact1" name="pContact" value="30">
+                    <label for="contact1">Email</label>
+                    <input required type="radio" id="contact2" name="pContact" value="60">
+                    <label for="contact2">Phone</label>
+                    </div>
+                </div>
+                <label type="text" for="message">Your Message:</label>
+                <textarea name="message"></textarea>
+                <input class="touch" required type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

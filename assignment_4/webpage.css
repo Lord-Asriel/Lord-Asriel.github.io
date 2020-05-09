@@ -1,0 +1,192 @@
+*{
+    padding:0;
+    margin: 0;;
+}
+body{
+    background-color: #000000;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav h2{
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+nav a{
+    padding:10px;
+}
+.container{
+    display: flex;
+}
+.o-space_evenly{
+    display: flex;
+justify-content: space-around;
+}
+p,label{
+    color:#ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2em;
+    font-size: 17px;
+}
+h1{
+    color: #ffffff;
+    margin:7px;
+    font-size: 3em;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 90px;
+}
+h2{
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    line-height: 0;
+}
+h3{
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height:40px;  
+    font-size: 20px; 
+}
+h4{
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height:40px; 
+    font-size: 1.5em; 
+}
+a{
+    text-decoration: none;
+    color:#ffffff;
+}
+/* I am reussing this for contact page as well */
+.about_me{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+.arrivederci{
+    width: 50%;
+    margin:10px;
+}
+.inspiration_side_by_side{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.inspiration{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+.inspiration img{
+width: 90%;
+}
+#portal{
+    width: 30%;
+}
+.textbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+input,label{
+    display:block;
+}
+.multi_select input{
+    display:inline;
+}
+.multi_select label{
+    display:inline;
+}
+.multi_select{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+label,.contact{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color:white;
+}
+.citation{
+    font-size: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: #0000ff;
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+.touch{
+    margin-top: 20px;
+}
+@media screen and (max-width: 560px){
+    .inspiration_side_by_side{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .inspiration img{
+        width: 50%;
+        }
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .o-space_evenly{
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+    h1{
+        font-size: 2em;
+    }
+    .arrivederci{
+        width: 100%;
+        margin:10px;
+    }
+    form{
+        border-style: none;
+    }
+    .contact{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 839px){
+    h1{
+        font-size: 2em;
+    }
+    .inspiration img{
+        width: 75%;
+        }
+    .arrivederci{
+        width: 75%;
+        margin:10px;
+    }
+    form{
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+    .inspiration_side_by_side{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
